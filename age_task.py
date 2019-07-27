@@ -12,7 +12,8 @@ b_year = int(input())
 
 c_age = n_year - b_year
 
-if (b_month > n_month) or (b_month == n_month and b_day > n_day):
+# Здесь скобочки необязательны, операция сравнения имеет больший приоритет, чем or
+if b_month > n_month or (b_month == n_month and b_day > n_day):
     c_age -= 1
 
 if c_age >= 0:
